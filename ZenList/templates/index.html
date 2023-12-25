@@ -49,8 +49,9 @@
         </div>
       </div>
     </nav>
+    {%if success%}
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-      <strong>Hello</strong> form submittes:{{success}}
+      <strong>Success:</strong> Your form submitted successfully
       <button
         type="button"
         class="btn-close"
@@ -58,8 +59,9 @@
         aria-label="Close"
       ></button>
     </div>
+    {% endif %}
     <div class="container">
-      <h1 class="text-center">Welcome to ZenList, Add a task</h1>
+      <h1 class="text-center">Welcome to ZenList {{name}} ,Add a task</h1>
     </div>
 
     <form action="/" method="post">
